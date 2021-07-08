@@ -12,28 +12,27 @@
 //  se o numero sorteado for 1,  ganha 
 // quem escolher o numero maior
 
-var jog1 = parseInt(prompt(`digite um número:`));
-var jog2 = parseInt(prompt(`Digite outro número:`))
-var resultSorteio = parseInt(math.random() * 2);
-// let empat = jog1 === jog2
+
+let jog1 = parseInt(prompt(`Enter a number:`))
+let jog2 = parseInt(prompt(`Enter another number:`));
+let sorteio = parseInt(Math.random() * 2);
+
 if (jog1 === jog2) {
-    alert(`Empate com resultado ${jog1}`);
+    alert(`EMPATE! Número jogado foi: ${jog1}`);
 }
 else {
-    if (resultSorteio = 1) {
-        if (jog1 > jog2) {
-            alert(`O jog1 venceu com número `);
+    if (sorteio == 0) {
+        if (jog1 < jog2) {
+            alert(`SORTEIO: ${sorteio}\nJOgador 1 ganhou,  com número menor: ${jog1}`);
         } else {
-            alert(`Ojog2 venceu com `);
+            alert(`SORTEIO: ${sorteio}\nO jogador 2 ganhou com número menor: ${jog2}`);
         }
-    }
-    else {
-        if(resultSorteio = 0) {
-            if (jog1 < jog2) {
-                alert(`O jog1 venceu com número `);
-            } else {
-                    alert(`O jog2 venceu número `);
-            } 
+    }else {
+        if (jog1 > jog2) {
+            alert(`SORTEIO: ${sorteio}\nO jogador 1 ganhou,  com número maior: ${jog1}`);
+        }
+        else {
+            alert(`SORTEIO: ${sorteio}\nO jogador 2 ganhou, com número maior: ${jog2}`);
         }
     }
 }
