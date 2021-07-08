@@ -19,3 +19,13 @@ else {
         alert(`Reprovado!! A média foi menor que 4`);
     }
 }
+
+ 
+// OU assim
+
+// if (media >= 4 && note1 > 0 && note2 > 0) {
+//     alert(`PARABÉNS! Passas-te`);
+// }
+// else {
+//     alert(`Reprovou. Que pena, continue tentado!!!`)
+// }
