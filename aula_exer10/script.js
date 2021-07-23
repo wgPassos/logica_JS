@@ -1,37 +1,30 @@
-// Pedir para usuário digitar um número
-// E fazer em seguida a tabuada desse número 
-// até 1000
+// Exercício 6
 
-// let numero = parseInt(prompt("Digite um número:"))
-// let indice = 1;
+// fazer jogador 1 digitar um número
+// fazer jogador 2 digitar outro número
+// Se forem iguais,  mostra mendagem "empate"
 
-// // Repita até que o indice seja 1000
-// while (indice <= 1000) {
-//     document.write(numero + "X" + indice + "=" + (numero * indice) + "<br>");
+// Sortear um número entre 0 e 1
 
-//     indice = indice + 1;
-// }
-// document.write(`Saiu do loop`);
+// se o numero sorteado for 0, ganha
+// quem escolher o número menor 
 
-// TESTANDO com escolhas de início e ffim da tabuada
+//  se o numero sorteado for 1,  ganha 
+// quem escolher o numero maior
 
-// let tabuada = parseInt(prompt(`Digite uo número da tabuada que você quer:`));
-// let comecoTabuada = parseInt(prompt(`Comece em qual multiplicando?`));
-// let fimTabuada = parseInt(prompt(`Em qual multiplicando terminar?`));
+let jog1 = parseFloat(prompt(`Type a note:`));
+let jog2 = parseFloat(prompt(`Type another note:`));
 
-// while (comecoTabuada <= fimTabuada) {
-//     document.write(tabuada + " X " + comecoTabuada + " = " + (tabuada * comecoTabuada) + "<br>");;
-//     comecoTabuada = comecoTabuada + 1;
-// }
 
-// document.write("Saiu do loop");
-
-// TESTANDO COM for
-let tabuada = parseInt(prompt("Digite a tanuada:"));
-let comeco = parseInt(prompt('A tabuada começa em número?'));
-let final = parseInt(prompt("Atabuada termina em qual número?"));
-
-for (comeco; comeco <= final; +1) {
-    document.write(tabuada + "x" + comeco + " = " + (tabuada * comeco) + "<br>");
-    comeco = comeco + 1;
+if (jog1 === jog2) {
+    alert(`Empate`);
+} else {
+    let sorteio = parseInt(Math.random() * 2);
+    alert(sorteio);
+    // Parte onde foi simplificado do exercise 7
+    if (sorteio === 0 && jog1 < jog2 || sorteio === 1 && jog1 > jog2) {
+        alert(`Jog1 venceu com jogo: ${jog1}`);
+    } else {
+        alert(`Jog2 venvceu com jogo: ${jog2}`);
+    }
 }
