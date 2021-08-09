@@ -1,29 +1,15 @@
-// SWITCH
-// Compara valor e tipo
+// Para esta tarefa reescreva o código da aula 
+// anterior, mas inserindo uma linha divisória sempre 
+// que mudar a dezena.
+// Ou seja, entre 10 e o 11, entre 20 e 21 e assim por diante.
 
-// let numero = prompt(`Enter a numeber`);
+const tabuada = parseInt(prompt(`Enter the multiplication table you want:`));
 
-// switch(numero) {
-//     case 1:
-//         alert(`type number`);
-//     break;
-//     case "1":
-//         alert(`Type string`);
-// // A escolha(Switch) vai cair no segundo case,
-// // o Switch compara valor e tipo,
-// // Pois,  no prompt captura-se "String"
-// }
 
-let nome = prompt(`Type your name:`);
-let compNome = nome.length;
-
-// Switch não se compara com operadores dentro
-// SEMPRE compara com valores fechados (e os tipos)
-switch (compNome) {
-    case (compNome > 5):
-        alert(`Nome é comprido`);
-    case (compNome <= 5):
-        alert(`Nome curto`);
-    default:
-        alert(`Escreva um nome`);
+for (i = 0; i <= 1000; i++) {
+    document.write(`${tabuada} X ${i} = ${tabuada * i} <br>`);
+    if (i % 10 === 0) {
+        document.write(`<hr>`);
+    }
 }
+document.write(`Saiu do loop`);
