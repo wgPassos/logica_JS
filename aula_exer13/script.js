@@ -6,9 +6,25 @@
 
 // Isso é como mostrar os anos bissextos
 // as regras para definir se um ano é bissexto 
-console.log(`òlla world`);
-let year = 1004;
+console.log("Ola mundo");
 
-for (i = 1004; i <= 2021; +4) {
-    document.write(`${i} <br>`);
+
+let  ano = 1004;
+
+// while (ano <= 2021) {
+//     if (!(ano % 100 === 0) || (ano % 400 ===0)) {
+//     document.write(`${ano} <br>`);
+//     } else {
+//         document.write(`${ano} não é bissexto <br>`);
+//     }
+//     ano += 4;
+// }
+
+for (ano = 1004; ano <= 2021; ano += 4) {
+    if (!(ano % 100 === 0) || (ano % 400 === 0)) {
+        document.write(`${ano} <br>`);
+    } else {
+        document.write(`${ano} não é bissexto <br>`);
+    }
 }
+document.write(`Saiu do loop`);

@@ -31,7 +31,6 @@ let tabuada = parseInt(prompt("Digite a tanuada:"));
 let comeco = parseInt(prompt('A tabuada começa em número?'));
 let final = parseInt(prompt("Atabuada termina em qual número?"));
 
-for (comeco; comeco <= final; +1) {
+for (comeco; comeco <= final; comeco++) {
     document.write(tabuada + "x" + comeco + " = " + (tabuada * comeco) + "<br>");
-    comeco = comeco + 1;
 }
