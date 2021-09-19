@@ -18,8 +18,19 @@ function mostrarTabuada () {
         var i = 1;
         while (i <= 100) {
             mensagem += `${n} * ${i} = ${n * i}<br> `;
-            i++;
+            if (i % 10 == 0) {
+                mensagem += `<hr>`
+            }i++;
         }
+
+        // Se quisessemos fazer com FOR
+        // for (; i <= 100; i++) {
+        //     mensagem += `${n} * ${i} = ${n * i}<br> `;
+        //     if (i % 10 == 0) {
+        //         mensagem += `<hr>`
+        //     };
+        // }
+
         output.innerHTML = mensagem;
     }
 }
