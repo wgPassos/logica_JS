@@ -3,7 +3,12 @@ function mostrarAreaAlert() {
     var largura = parseFloat(prompt("Digite um numero:"));
     var altura = parseFloat(prompt("Digite outro numero:"));
 
-    alert(`A área total é: ${calcularArea(largura, altura)}`);
+    try {
+        alert(`A área total é: ${calcularArea(largura, altura)}`);
+    } catch(e) {
+        alert(e);
+    }
+    
 }
 
 function mostrarAreaOutput() {
