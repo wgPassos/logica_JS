@@ -53,3 +53,26 @@ for (i = 0; i < Clientes.length; i++ ) {
 }
 
 output.innerHTML +=  msg;
+
+
+let output2 = document.getElementById("output2");
+
+let fornecedor1 = {
+    nome: "Caroline",
+    email: "carol@gmail.com",
+}
+let fornecedor2 = {};
+fornecedor2.nome = "Miguel";
+fornecedor2.email = "miguel@gmail.com";
+
+let fornecedores = [fornecedor1, fornecedor2];
+
+console.log(fornecedores);
+
+let msg2 = "";
+
+for (i = 0; i < fornecedores.length; i ++) {
+    msg2 += `<h2>Fornecedor: ${fornecedores[i].nome}</h2> E-mail: ${fornecedores[i].email}<br>`
+}
+
+output2.innerHTML += msg2;
